@@ -20,4 +20,4 @@ jobs:
     - shell: pwsh
       run: |
         Install-Module -Name AWS.Tools.EC2 -Force
-        Remove-EC2Instance -InstanceId ${{ secrets.EC2_ID }}
+        Remove-EC2Instance -InstanceId ${{ secrets.EC2_ID }} -Force
