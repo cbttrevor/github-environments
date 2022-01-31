@@ -7,7 +7,7 @@ on:
 jobs:
   prod-deploy:
     runs-on: ubuntu-latest
-    environment: production2
+    environment: production
     steps:
     - shell: pwsh
       run: Write-Host 'Running production deployment'
